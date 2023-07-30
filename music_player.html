@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <!-- FA fa icons -->
+    <script
+      src="https://kit.fontawesome.com/849b54177a.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="music_player.css" />
+    <!-- JS -->
+    <script src="music_player.js" defer></script>
+  </head>
+  <body>
+    <!-- Background-color -->
+    <div class="upper-bg"></div>
+    <div class="lower-bg"></div>
+    <div class="hamburger">
+        <i class="fa-solid fa-bars fa-lg ham-btn"></i> 
+        <i class="fa-sharp fa-solid fa-xmark fa-lg cross-btn  disp-none"></i>
+    </div>
+    <div class="side-menu disp-none">
+        <!-- Hamburger -->
+        
+
+    </div>
+
+    <!-- Music-player -->
+    <div class="container-wrapper d-flex ">
+        <!-- Song container-wrapper -->
+      <div class="sing-song-container d-flex">
+        <!-- Maximize minimize button -->
+        <!-- <div class="max-songs">
+          <i class="fa-solid fa-caret-down" style="color: #13131e"></i>
+        </div> -->
+        <!-- Song-img -->
+        <div class="img-container mar-top">
+          <img />
+        </div>
+        <!-- Song-detail -->
+        <div class="song-detail mar-top">
+          <div class="detail-name"></div>
+          <div class="detail-singer"></div>
+        </div>
+        <!-- Buttons -->
+        <div class="control-container d-flex mar-top">
+          <div class="shuffle-btn">
+            <i class="fa-solid fa-shuffle" style="color: #13131e"></i>
+          </div>
+
+          <div class="previous-btn mar-left">
+            <i class="fa-solid fa-backward-step" style="color: #13131e"></i>
+          </div>
+
+          <div class="pause-play mar-left">
+            <i class="fa-solid fa-pause disp-none  pause-btn" style="color: white;"></i>
+            <i class="fa-solid fa-play play-btn" style="color: white "></i>
+            <!--Play-->
+          </div>
+
+          <div class="next-btn mar-left">
+            <i class="fa-solid fa-forward-step" style="color: #13131e"></i>
+          </div>
+
+          <div class="loop-btn mar-left">
+            <i class="fa-sharp fa-solid fa-repeat" style="color: #13131e"></i>
+          </div>
+        </div>
+        <!-- Progress-bar -->
+        <!-- <div class="progress-bar mar-top"></div> -->
+        <div class="audio-box mar-top">
+            <audio controls>
+                <source class="audio-src" src="">
+            </audio>
+      </div> 
+        <!-- Timings -->
+        <div class="timing-wrapper d-flex">
+          <div class="time-spent">00:00</div>
+          <div class="total-time"></div>
+        </div>
+      </div>
+    
+      <!-- Song list wrapper -->
+      <!-- <div class="song-list-wrapper">
+            <div class="max-songs">
+            <i class="fa-sharp fa-solid fa-xmark" style="color: #13131e"></i>
+            </div>
+            <div class="songs-list">
+                <ul>
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+      </div> -->
+    </div>
+    <script src="lib/moment/moment.min.js"></script>
+  </body>
+</html>
